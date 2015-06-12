@@ -1,0 +1,266 @@
+/*************************************************************************
+COLOR INDEX:
+          @green   : rgb(34,139,34)
+          @red     : rgb(229,49,49) 
+*************************************************************************/
+
+
+
+/*********************************
+	Digital Font for Timer
+*********************************/
+
+@font-face {
+  font-family: 'digital_dreamregular';
+    src: url('DIGITALDREAM-webfont.eot');
+    src: url('DIGITALDREAM-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DIGITALDREAM-webfont.woff') format('woff'),
+         url('DIGITALDREAM-webfont.ttf') format('truetype'),
+         url('DIGITALDREAM-webfont.svg#digital_dreamregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*********************************
+		  Main Styling
+*********************************/
+body {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background: url(img/pomodoro-bg.jpg) no-repeat center center fixed;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*********************************
+			Header
+*********************************/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #228B22;
+  background-color: white;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.76);
+  box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.76);
+}
+
+#heading {
+  margin-top: 5px;
+  float: left;
+}
+
+#logo {
+  display: inline-block;
+  margin-bottom: -6px;
+}
+
+#heading h1 {
+  font-size: 1.125em;
+  display: inline-block;
+  margin: 0px auto 5px;
+}
+
+#heading span {
+  color: rgb(229,49,49);
+}
+
+/******************************
+		StopWatch
+********************************/
+#timer {
+  margin: 70px auto 0px;
+}
+
+#stopwatch {
+  margin: 10px auto 0;
+  width: 80%;
+  max-width: 280px;
+  font-size: 2.5em;
+  background-color: rgba(0, 0, 0, .9);
+  padding: 13px 0 15px;
+  color: rgb(34,139,34);
+  text-shadow: 1px 1px 8px rgb(34,139,34);     
+  border-radius: 10px;
+  border-bottom: 1px solid rgb(229,49,49);     
+  font-family: 'digital_dreamregular', cursive;
+  display: block;
+}
+
+#start {
+  color: rgb(34,139,34);
+}
+
+#reset {
+  color: rgb(34,139,34);
+  display: none;
+}
+
+#stop {
+  color: rgb(229,49,49);
+}
+
+.button {
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 0.9em;
+  border: none;
+  text-align: center;
+  height: 30px;
+  width: 80px;
+  margin: 5px 10px;
+}	
+
+
+/*********************************
+	   Slide down Panel with Information
+*********************************/
+#panel, #flip {
+  padding: 5px 0 0;
+  text-align: center;
+  background-color: white;
+  margin-top: -8px;
+  float: right;
+}
+
+#panel {
+  padding: 15px 15px;
+  display: none;
+  background-color: white;
+}
+
+#initial {
+  border: 1px solid rgb(229,49,49) ;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+/*********************************
+          List Creator
+*********************************/
+
+form {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#populate_list {
+  
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgb(34,139,34);
+  color: rgb(34,139,34);
+  min-width: 200px;
+  
+}
+
+
+/*********************************
+              List
+*********************************/
+
+ul {
+  padding: none;
+  margin: 20px auto;
+  color: rgb(34,139,34);
+  text-decoration: none;
+  list-style-type: none;
+  text-align: left;
+}
+
+li {
+
+  text-decoration: none;
+  list-style-type: none;
+  text-align: left;
+  border-bottom: 2px solid rgb(34,139,34);
+  padding: 8px 10px;
+  margin: 5px 0;
+  background-color: white;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+#done {
+  float: right;
+  font-size: .8em;
+  color: rgb(34,139,34);
+  border-radius: 50%;
+  border: 1px solid rgb(229,49,49) ;
+  background-color: inherit;
+  margin-left: 10px;
+}
+
+
+
+
+/* Custom, iPhone Retina */ 
+
+    /* Small Devices, Tablets */
+
+   
+@media only screen and (min-width : 768px) {
+    	
+ 
+
+  /******************************
+          StopWatch
+********************************/
+  #stopwatch {
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 320px;
+    font-size: 4em;
+  }
+
+  .button {
+    font-size: 1.5em;
+    height: 50px;
+    width: 100px;
+    margin: 5px 10px;
+  }
+
+
+/*********************************
+          List Creator
+*********************************/
+  #populate_list {
+    min-width: 300px;
+    font-size: 1.5em;
+  }
+
+/*********************************
+             List 
+*********************************/
+   ul {
+    font-size: 1.5em;
+    width: 80%;
+  }
+}
+
+
+    /* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+/*********************************
+             List 
+*********************************/
+  ul {
+    width: 60%;
+  }
+}

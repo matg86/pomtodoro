@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+ 
+
+  <title>PomTODOro</title><!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="heading">
+        <img height="35px" id="logo" src="css/img/logo.png" width="35px">
+
+        <h1>Pom<span>ToDo</span>ro</h1>
+      </div>
+
+      <div id="flip">
+        <p id="initial">?</p>
+      </div>
+
+      <div id="panel">
+        The Pomodoro Technique is a time management method developed by Francesco Cirillo in the 1980s. The technique uses a timer to break
+        down work into intervals traditionally 25 minutes in length, separated by short breaks. The idea is that frequent breaks can
+        improve mental agility.<br>
+        <br>
+        Just add your tasks to the list, hit enter and start the countdown. Once the timer gets to 0, take a short break, relax your
+        mind, walk around, eat some food or drink some water.<br>
+        <br>
+        Lather, rinse, repeat until all your tasks are complete.
+      </div>
+    </div>
+  </header>
+
+
+  <section>
+    <div class="container">
+      <div id="timer">
+        <div id="stopwatch">
+          <span id="time">25:00</span>
+          
+        </div>
+        <input class="button" id="start" type="button" value="Start"> 
+        <input class="button" id="reset" type="button" value="Reset"><input class="button" id="stop" type="button" value="Stop">
+      </div>
+
+      <form>
+        <input id="populate_list" placeholder="Add Task..." type="text">
+      </form>
+    </div>
+</section>
+    
+    
+<div class="container">
+
+<ul></ul>
+</div>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+  <script src="scripts/script.js"></script>
+</body>
+</html>
+
