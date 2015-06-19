@@ -22,7 +22,7 @@ function popUp() {
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     anInterval = setInterval(function () {
-        minutes = parseInt(timer / 60, 10)
+        minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
         minutes = minutes < 10 ? "0" + minutes : minutes;
@@ -96,7 +96,7 @@ $('form').submit(function () {
     if ($("#populate_list").val() !== '') {
         var input_value = $('#populate_list').val();
         $("ul").append( "<li><input type='button' id='done' value='&#10004'></input>" + input_value + "</li>");
-    };
+    }
     $('#populate_list').val('');
     return false;
 });
